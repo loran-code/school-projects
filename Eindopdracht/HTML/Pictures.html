@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Picture</title>
+    <link href="/CSS/Pictures.css" rel="stylesheet" type="text/css" />
+    <link href="/CSS/style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Pictures</h1>
+        <p id="date" class="date">"</p>
+        <p id="time" class="time">"</p>
+      </header>
+      <nav class="flexbox-nav">
+         <ul>
+          <li><a href="/HTML/Home.html">Home</a></li>
+          <li><a href="/HTML/Blog.html">Blog</a></li>
+          <li><a href="/HTML/GamePicker.html">GamePicker</a></li>
+          <li><a href="/HTML/Pictures.html">Pictures</a></li>
+          <li><a href="/HTML//Video_Audio.html">Video/Audio</a></li>
+          <li><a href="/HTML/Form.html">Form</a></li>
+        </ul>
+      </nav>
+
+    <main>
+     <section class="flex-container-img">
+       <button class="button-Left" onclick="prev()"> Prev </button>
+       <figure>
+        <img id="slider" class="img-Slider" src="https://picsum.photos/300/400" alt="Picture not loaded from https://picsum.photos/" width="300px" height="150px" />
+         <figcaption>A bit of JS slider magic.</figcaption>
+       </figure>
+       <button class="button-Right" onclick="next()"> Next </button>
+     </section>
+
+      <section class="flex-container-img">
+        <figure>
+          <img
+            class="picture1-left"
+            src="/Media/picture1.jpg"
+            alt="picture 1"
+            width="200"
+            height="100"
+          /> <figcaption>dropshadow 1 px color red</figcaption>
+        </figure>
+        </article>
+
+        <article>
+         <figure>
+          <img
+            class="picture1-mid"
+            src="/Media/picture1.jpg"
+            alt="picture 1"
+            width="200"
+            height="100"
+          />
+          <figcaption>dropshadow 5 px color red</figcaption>
+        </figure>
+        </article>
+
+        <article>
+        <figure>
+        <img
+          class="picture1-right"
+          src="/Media/picture1.jpg"
+          alt="picture 1"
+          width="200"
+          height="100"
+        />
+        <figcaption>dropshadow 10 px color red</figcaption>
+      </figure>
+      </section>
+    </article>
+
+      <section>
+        <figure>
+        <svg width="100" height="100">
+          <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+        </svg>
+          <figcaption>Scalable Vector Graphics image </figcaption>
+        </figure>
+      </section>
+     
+      <section>
+        <p class="centertext">A canvas that can be used together with javascript</p>
+        <figure>
+          <canvas id="canvas" width="200" height="100" style="border:3px solid #ff0000;">
+            <figcaption>Scalable Vector Graphics image </figcaption>
+        </figure>  
+          </section>
+    </main>
+
+      <footer>
+       <details>
+        <summary>- Made by Loran van den Akker -</summary>
+        <p>Web design school project</p>
+        <p>- Hogeschool Novi -</p>
+       </details>
+     </footer>
+     
+    </div>
+    <script src="/JS/Slider.js"></script>
+    <script src="/JS/ActualDateTime.js"></script>
+  </body>
+</html>

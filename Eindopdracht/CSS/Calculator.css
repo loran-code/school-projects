@@ -1,0 +1,31 @@
+body {
+  background-image: linear-gradient(260deg, #1731a5 0%, #04a567 100%);
+}
+
+.button {
+  width: 50;
+  height: 50;
+  font-size: 25;
+  margin: 2;
+  cursor: pointer;
+  background: rgb(180, 180, 180);
+  border: 1px;
+  border: 1px solid black;
+}
+
+.textview {
+  width: 205;
+  margin: 1;
+  font-size: 25;
+  padding: 5;
+  border: 1x solid black;
+}
+
+.center-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+}

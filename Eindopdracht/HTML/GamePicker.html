@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gamepicker</title>
+    <link href="/CSS/style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Gamepicker</h1>
+        <p id="date" class="date">"</p>
+        <p id="time" class="time">"</p>
+      </header>
+      <nav class="flexbox-nav">
+         <ul>
+          <li><a href="/HTML/Home.html">Home</a></li>
+          <li><a href="/HTML/Blog.html">Blog</a></li>
+          <li><a href="/HTML/GamePicker.html">GamePicker</a></li>
+          <li><a href="/HTML/Pictures.html">Pictures</a></li>
+          <li><a href="/HTML//Video_Audio.html">Video/Audio</a></li>
+          <li><a href="/HTML/Form.html">Form</a></li>
+        </ul>
+      </nav>
+
+      <main>
+      <section>
+        <article>
+          <h2>Enter 2 to 5 games</h2>
+          <form>
+            <label>Game #1:</label><br>
+            <input type="text" id="game1" name="game1"  placeholder="Chess" autofocus required><br><br>
+            <label>Game #2:</label><br>
+            <input type="text" id="game2" name="game2"  placeholder="Checkers" required><br><br>
+            <label>Game #3:</label><br>
+            <input type="text" id="game3" name="game3"><br><br>
+            <label>Game #4:</label><br>
+            <input type="text" id="game4" name="game4"><br><br>
+            <label>Game #5:</label><br>
+            <input type="text" id="game5" name="game5"><br><br>
+            <input type="reset">
+          </form><br>
+          <button onclick="randomnizer()">Randomnize!</button>
+          <p id="gameNumber" class="gameNumber"></p>
+        </section>
+        </main>
+      <footer> <details>
+        <summary>- Made by Loran van den Akker -</summary>
+        <p>Web design school project</p>
+        <p>- Hogeschool Novi -</p>
+      </details>
+    </footer>
+    </div>
+      <script src="/JS/ActualDateTime.js"></script>
+    </body>
+</html>

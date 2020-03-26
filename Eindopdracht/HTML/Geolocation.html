@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Geolocation</title>
+    <link href="/CSS/style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Geolocation</h1>
+        <p id="date" class="date">"</p>
+        <p id="time" class="time">"</p>
+      </header>
+
+      <main>
+        <section>
+          <article>
+            <h2>Geolocation 1</h2>
+            <p class="a-reset" :hover>
+              I have followed along with a tutorial on
+              <a
+                href="https://www.w3schools.com/html/html5_geolocation.asp"
+                target="_blank"
+                ><u>W3Schools</u></a
+              >
+              to get to this result.<br /><br />
+              Click the button to get your coordinates.
+            </p>
+            <button onclick="getLocation()">Check your location!</button>
+            <p id="geolocation"></p>
+          </article>
+        </section>
+
+        <section>
+          <article>
+            <h2>Geolocation 2</h2>
+            <p class="a-reset" :hover>
+              And for this one I have followed along with a tutorial on
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API"
+                target="_blank"
+                ><u>developer.mozilla.org</u></a
+              ><br /><br />
+            </p>
+            <button id="find-me">Check your location</button><br />
+            <p id="status"></p>
+            <a id="map-link" target="_blank"></a>
+          </article>
+        </section>
+      </main>
+
+      <footer>
+        <details>
+          <summary>- Made by Loran van den Akker -</summary>
+          <p>Web design school project</p>
+          <p>- Hogeschool Novi -</p>
+        </details>
+      </footer>
+    </div>
+    <script src="/JS/Geolocation.js"></script>
+    <script src="/JS/ActualDateTime.js"></script>
+  </body>
+</html>

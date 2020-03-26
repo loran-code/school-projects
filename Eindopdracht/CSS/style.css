@@ -1,0 +1,138 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background-image: linear-gradient(260deg, #1731a5 0%, #04a567 100%);
+}
+
+.a-reset a {
+  color: white;
+  font-weight: 100;
+  display: inline;
+  background: rgba(255, 255, 255, 0);
+}
+
+.a-reset:hover {
+  background: rgba(255, 255, 255, 0);
+}
+
+a {
+  color: white;
+  font-weight: 100;
+  letter-spacing: 2;
+  text-decoration: none;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 10px 1px;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  transition: all 1s;
+}
+
+a:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+/* Flexbox container */
+.flexbox-nav ul {
+  border: 3px solid black;
+  list-style: none;
+  margin: 10;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flexbox-nav li {
+  flex: 1 1;
+}
+
+@media all and (max-width: 500px) {
+  .flexbox-nav {
+    flex-basis: 100%;
+  }
+
+  /* Flex Containeer */
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Flex Item */
+  .wrapper > * {
+    order: 99;
+  }
+
+  .flexbox-nav {
+    order: 1;
+  }
+
+  /* Needs JS */
+  .toggleNav {
+    display: block;
+  }
+}
+
+header {
+  text-align: center;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 1px;
+  margin: 5px 0 auto;
+  color: white;
+  font-weight: 100;
+}
+
+section {
+  text-align: center;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 25px;
+  margin: 25px 0 auto;
+  color: white;
+  font-weight: 100;
+}
+
+footer {
+  text-align: center;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  margin: 5px 0 auto;
+  color: white;
+  font-weight: 100;
+}
+
+footer p {
+  text-align: center;
+}
+
+.centertext {
+  text-align: center;
+}
+
+p {
+  text-align: left;
+  padding-left: 75px;
+  padding-right: 75px;
+  /* margin: 40px 30px auto; */
+}
+
+/* specific classes */
+p.date {
+  text-align: center;
+}
+
+p.time {
+  text-align: center;
+}
+
+p.gameNumber {
+  text-align: center;
+}

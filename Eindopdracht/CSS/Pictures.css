@@ -1,0 +1,42 @@
+.button-Left {
+  text-align: center;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  margin-left: 100px;
+  color: white;
+  font-weight: 100;
+}
+
+.button-Right {
+  text-align: center;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  margin-right: 100px;
+  color: white;
+  font-weight: 00;
+}
+
+.img-Slider {
+  background: rgba(0, 0, 0, 0.3);
+  padding: 3px;
+}
+
+.flex-container-img {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+  border: 1px solid rgb(0, 0, 0);
+}
+
+.picture1-left {
+  filter: drop-shadow(1px 1px 1px rgb(255, 0, 0));
+}
+
+.picture1-mid {
+  filter: drop-shadow(5px 5px 5px rgb(255, 0, 0));
+}
+
+.picture1-right {
+  filter: drop-shadow(10px 10px 10px rgb(255, 0, 0));
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <link href="/CSS/style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <div class="wrapper">
+    <header>
+      <h1>Form</h1>
+      <p id="date" class="date">"</p>
+      <p id="time" class="time">"</p>
+    </header>
+    <nav class="flexbox-nav">
+      <ul>
+        <li><a href="/HTML/Home.html">Home</a></li>
+        <li><a href="/HTML/Blog.html">Blog</a></li>
+        <li><a href="/HTML/GamePicker.html">GamePicker</a></li>
+        <li><a href="/HTML/Pictures.html">Pictures</a></li>
+        <li><a href="/HTML//Video_Audio.html">Video/Audio</a></li>
+        <li><a href="/HTML/Form.html">Form</a></li>
+      </ul>
+    </nav>
+  </div>
+  <body>
+    <section>
+      <h2>Form</h2>
+      <form action="url" method="POST">
+        <label for="text">* Your name </label>
+        <input
+          type="text"
+          name="name"
+          placeholder="Full name"
+          id="name"
+          required
+        /><br />
+        <label for="email">* Your e-mail address </label>
+        <input
+          type="email"
+          name="email"
+          placeholder="Youremail@example.com"
+          id="email"
+          required
+        /><br />
+
+        <label for="birthdate">* Date of birth </label>
+        <input
+          type="date"
+          name="birthdate"
+          placeholder="Date of birth"
+          id="birthdate"
+          required
+        />
+        <input type="submit" value="Submit" />
+      </form>
+      <div><b>Fields marked with * are required.</b></div>
+      <br />
+    </section>
+    <script src="/JS/Form.js"></script>
+    <script src="/JS/ActualDateTime.js"></script>
+  </body>
+</html>
